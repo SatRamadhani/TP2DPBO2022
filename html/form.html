@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "id">
+    <!--
+        Nama  : Muhammad Satria Ramadhani
+        NIM   : 2005128
+        Kelas : Ilmu Komputer - KOM-4C2
+    -->
+
+    <!-- Web preparation. -->
+    <head>
+        <link rel = "icon" href = "assets/img/logo-circle.png" />
+        <link rel = "stylesheet" href = "assets/style/style.css" />
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+        <title>Tambah Pengurus | Tugas Praktikum 02.</title>
+    </head>
+
+    <!-- Body. -->
+    <body class = "bg-dark bg-img">
+        <header class = "bg-dark-custom">
+            <nav class = "navbar navbar-expand-md bg-dark-custom mx-2 mx-lg-5 px-2 px-lg-5 py-3">
+                <div class = "container-fluid">
+                    <a class = "navbar-brand" href = "index.php">
+                        <img src = "assets/img/logo-circle.png" height = "30"/>
+                    </a>
+                    <button
+                        class = "navbar-toggler navbar-dark"
+                        type = "button"
+                        aria-controls = "navbarSupportedContent"
+                        aria-expanded = "false"
+                        data-bs-target  = "#navbarSupportedContent" 
+                        data-bs-toggle = "collapse">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+                    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                        <ul class = "navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class = "nav-item text-center">
+                                <a class = "nav-link" aria-current = "page" href = "index.php">Home</a>
+                            </li>
+                            <li class = "nav-item text-center">
+                                <a class = "nav-link" href = "form.php">Tambah Pengurus</a>
+                            </li>
+                        </ul>
+                        <div class = "d-flex justify-content-center">
+                            <ul class = "navbar-nav me-5 mb-2 mb-lg-0">
+                                <li class = "nav-item text-center">
+                                    <a class = "nav-link" aria-current = "page" href = "division.php">Data Divisi</a>
+                                </li>
+                                <li class = "nav-item text-center">
+                                    <a class = "nav-link" href = "field.php">Data Bidang Divisi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class = "border-bottom p-5">
+            <div class = "mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class = "container h-100">
+                    <div class = "row d-flex justify-content-center align-items-center h-100">
+                        <div class = "col-12 col-md-9 col-lg-7 col-xl-6">
+                            <h2 class = "text-center mb-5">Tambah Pengurus</h2>
+                            <form action = "form.php" method = "POST">
+                                <div class = "row">
+                                    <div class = "col col-4 form-floating mb-3">
+                                        <input name = "nim" class = "form-control bg-dark-custom" type = "text" placeholder = "Masukkan NIM..." required />
+                                        <label for = "nim" class = "ms-2">NIM</label>
+                                    </div>
+                                    
+                                    <div class = "col col-8 form-floating mb-3">
+                                        <div class = "form-floating mb-3">
+                                            <input name = "name" class = "form-control bg-dark-custom" type = "text" placeholder = "Masukkan nama..." required />
+                                            <label for = "name">Nama</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class = "row">
+                                    <div class = "col col-2 form-floating mb-3">
+                                        <select name = "semester" class = "form-select bg-dark-custom" placeholder = "Masukkan Semester..." required>
+                                            <option value = "2" selected>2</option>
+                                            <option value = "4">4</option>
+                                        </select>
+                                        <label for = "semester" class = "ms-2">Semester</label>
+                                    </div>
+
+                                    <div class = "col col-10 form-floating mb-3">
+                                        <select name = "division" class = "form-select bg-dark-custom" placeholder = "Masukkan Bidang..." required>
+                                            DATA_BIDANG
+                                        </select>
+                                        <label for = "division" class = "ms-2">Bidang Divisi</label>
+                                    </div>
+                                </div>
+                                
+          
+                                <div class = "d-flex justify-content-center">
+                                    <button
+                                        name = "add"
+                                        class = "btn btn-primary btn-lg"
+                                        type = "submit"
+                                        onclick = "addSuccess()">
+                                        Tambah Pengurus
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity = "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin = "anonymous">
+        </script>
+        <script src = "assets/script/script.js"></script>
+    </body>
+</html>

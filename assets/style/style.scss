@@ -1,0 +1,34 @@
+$primary: #00DBDD;
+
+$body-bg: #121212;
+$body-color: #EEEEEE;
+
+$navbar-light-hover-color: #00448D;
+$navbar-light-active-color: $primary;
+
+$image-bg: url("../img/pattern.png");
+
+.bg-img
+{
+    background-image: $image-bg;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.bg-dark-custom
+{
+    background-color: $body-bg !important;
+}
+
+.img-promo
+{
+    object-fit: cover;
+}
+
+.img-testimony
+{
+    width: 50%;
+}
+
+@import "bootstrap-5.0.2/scss/bootstrap";
